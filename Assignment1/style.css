@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+}
+body {
+}
+
+nav {
+	display: flex;
+	background-color: black;
+}
+
+.nav-menu {
+	list-style: none;
+	display: flex;
+}
+
+h1 {
+	font-size: 72px;
+	color: white;
+}
+
+.nav-links {
+	width: 100px;
+	display: flex;
+	align-items: center;
+}
+.nav-links:hover {
+	background-color: white;
+}
+
+li > a {
+	height: 100%;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	align-items: center;
+}
