@@ -1,1 +1,83 @@
+body {
+	/* Has a maximum page width of 1000px (i.e. the content should never be wider than 1000px) ✅*/
+	width: 1000px;
+	margin: 0;
+}
+.header-logo-area {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	align-items: center;
+}
+img {
+	width: 150px;
+	height: auto;
+}
+nav {
+	background-color: #272822;
+}
+.nav-menu {
+	margin: 0 auto;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	list-style-type: none;
+}
+.nav-menu-item {
+	padding: 20px;
+}
+.nav-menu-link {
+	color: white;
+	font-weight: 500;
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	text-decoration: none;
+}
+.nav-menu-link:hover {
+	padding-bottom: 10px;
+	border-bottom: solid 2px white;
+}
 
+h1 {
+	font-size: 50px;
+	color: #23395b;
+	font-family: "Montserrat", sans-serif;
+}
+p {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+	margin: 0 auto;
+	font-size: 72px;
+	font-family: "Permanent Marker", cursive;
+	color: white;
+}
+h3 {
+	font-family: "Montserrat", sans-serif;
+	color: white;
+}
+section {
+	padding: 20px 50px;
+}
+.section-html {
+	background-color: #23395b;
+}
+.section-css {
+	background-color: #d81e5b;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #272822;
+	font-family: sans-serif;
+}
+.footer-text {
+	font-size: 20px;
+	color: white;
+	font-weight: 500;
+}

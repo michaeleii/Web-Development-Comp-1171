@@ -5,30 +5,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to a stylesheet containing your CSS styles ✅ -->
     <link rel="stylesheet" href="style.css">
-    <title>HTML & CSS</title>
+
+    <!-- Prism.js provides syntax highlighting in <code> tag -->
+    <link rel="stylesheet" href="prism.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <!-- Has a title that conveys the main topic ✅-->
+    <title>HTML & CSS Basics</title>
 </head>
 
 <body>
     <header>
+        <div class="header-logo-area">
+            <img src="images/logo.png" alt="HTML & CSS website logo">
+            <!-- Has an h1 with text that also conveys the main topic, using a display font and text color of your choosing ✅-->
+            <h1>The Basics of HTML & CSS</h1>
+        </div>
         <nav>
-            <h1>HTML & CSS</h1>
             <ul class="nav-menu">
-                <li class="nav-links">
-                    <a href="#HTML">HTML</a>
+                <li class="nav-menu-item">
+                    <a href="#html" class="nav-menu-link">HTML</a>
                 </li>
-                <li class="nav-links">
-                    <a href="#CSS">CSS</a>
+                <li class="nav-menu-item">
+                    <a href="#css" class="nav-menu-link">CSS</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <h2 id="HTML">HTML</h2>
-    <h3>Function of HTML in a webpage</h3>
-    <h3>How HTML written</h3>
-    <h2 id="CSS">CSS</h2>
-    <h3>Function of CSS in a webpage</h3>
-    <h3>How CSS is written</h3>
+    <!-- Has a minimum of two subheadings (h2) that break the content up into two logical sections, using a non-display font
+    and
+    text color (different from the h1) of your choosing ✅-->
+    <main>
+        <section class="section-html">
+            <h2 id="html">HTML</h2>
+            <h3>Function of HTML in a webpage</h3>
+            <p class="section-html-text">HTML provides <em>structure</em> in a webpage.</p>
+            <h3>How HTML is written</h3>
+            <pre class="language-html"><code class="language-html">
+    &lt;!DOCTYPE html&gt; 
+    &lt;html lang=&quot;en&quot;&gt; 
+    &lt;head&gt; 
+        &lt;meta charset=&quot;UTF-8&quot;&gt; 
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt; 
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; 
+        &lt;title&gt;Document&lt;/title&gt; 
+    &lt;/head&gt;
+    &lt;body&gt; 
+
+     Content goes here...
+
+    &lt;/body&gt; 
+    &lt;/html&gt;
+            </code></pre>
+        </section>
+        <section class="section-css">
+            <h2 id="css">CSS</h2>
+            <h3>Function of CSS in a webpage</h3>
+            <p class="section-css-text">CSS is used to style a webpage. It also controls how elements
+                should be
+                displayed on the webpage.</p>
+            <h3>How CSS is written</h3>
+            <pre class="language-css"><code class="language-css">
+    selector {
+
+        property: value;
+
+    }
+            </code></pre>
+        </section>
+    </main>
+    <footer>
+        <!-- Has a footer that contains your name and student ID ✅-->
+        <p class="footer-text">Michael Lei - A01058974</p>
+        <p class="footer-text">COMP 1171</p>
+    </footer>
+    <script src="prism.js"></script>
 </body>
 
 </html>
