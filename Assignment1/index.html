@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Permanent+Marker&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@400;500;700&family=Permanent+Marker&display=swap"
         rel="stylesheet">
 
     <!-- Has a title that conveys the main topic ✅-->
@@ -24,8 +24,7 @@
 
 <body>
     <header>
-        <div class="header-logo-area">
-            <img src="images/logo.png" alt="HTML & CSS website logo">
+        <div class="header-area">
             <!-- Has an h1 with text that also conveys the main topic, using a display font and text color of your choosing ✅-->
             <h1>The Basics of HTML & CSS</h1>
         </div>
@@ -47,20 +46,57 @@
         <section class="section-html">
             <h2 id="html">HTML</h2>
             <h3>Function of HTML in a webpage</h3>
-            <p class="section-html-text">HTML provides <em>structure</em> in a webpage.</p>
+            <p class="section-html-text">HTML (HyperText Markup Language) provides structure to the webpage.</p>
             <h3>How HTML is written</h3>
+            <p>A webpage is made up of many different HTML elements.</p>
+            <img class="section-html-img"
+                src="https://developer.mozilla.org/en-US/docs/Glossary/HTML/anatomy-of-an-html-element.png"
+                alt="Anatomy of an html element">
+            <ul>
+                <li>The <strong>Opening tag</strong> consists of the element's name and attributes surrounded by
+                    angle brackets.</li>
+                <li>The <strong>Closing tag</strong> consists of a forward slash and then the element name.</li>
+                <li>In between the opening tag and the closing tag contains the <strong>content</strong>.</li>
+                <li>Elements may also have <strong>attributes</strong>, which contain extra information about
+                    the element</li>
+            </ul>
+            <p>Every HTML page consists of the following:</p>
+            <ul>
+                <li>
+                    <code class="language-html">&lt;!DOCTYPE html&gt;</code>:
+                    tells the browser that document is an HTML5 document
+                </li>
+                <li>
+                    <code class="language-html">&lt;html&gt;</code>: encloses all the content on the page.
+                </li>
+                <li>
+                    <code class="language-html">&lt;head&gt;</code>: contains information about the page that is not the
+                    content as search engine keywords, character set of the page, link to stylesheets, and more.
+                </li>
+                <li>
+                    <code class="language-html">&lt;meta charset=&quot;UTF-8&quot;&gt;</code>:
+                    sets the document's character set to UTF-8.
+                </li>
+                <li>
+                    <code class="language-html">&lt;title&gt;</code>:
+                    sets the page title of the webpage, which appears in the browser's tab.
+                </li>
+                <li>
+                    <code class="language-html">&lt;body&gt;</code>: wraps the content that is displayed on the webpage.
+                </li>
+            </ul>
+            </p>
+            <p>Example of an HTML document:</p>
             <pre class="language-html"><code class="language-html">
     &lt;!DOCTYPE html&gt; 
     &lt;html lang=&quot;en&quot;&gt; 
     &lt;head&gt; 
         &lt;meta charset=&quot;UTF-8&quot;&gt; 
-        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt; 
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; 
         &lt;title&gt;Document&lt;/title&gt; 
     &lt;/head&gt;
     &lt;body&gt; 
 
-     Content goes here...
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
 
     &lt;/body&gt; 
     &lt;/html&gt;
@@ -69,10 +105,12 @@
         <section class="section-css">
             <h2 id="css">CSS</h2>
             <h3>Function of CSS in a webpage</h3>
-            <p class="section-css-text">CSS is used to style a webpage. It also controls how elements
-                should be
+            <p class="section-css-text">CSS (Cascading Style Sheets) is used to style a webpage. It also controls how
+                elements should be
                 displayed on the webpage.</p>
             <h3>How CSS is written</h3>
+            <p>In CSS, you define rules for selectors and associate them with properties to style them.</p>
+            <p>Here's how the CSS syntax looks like:</p>
             <pre class="language-css"><code class="language-css">
     selector {
 
@@ -80,12 +118,35 @@
 
     }
             </code></pre>
+            <ul>
+                <li>
+                    <code class="language-css">selector {}</code>: selects the html element that you want to change the
+                    style of.
+                </li>
+                <li>
+                    <code class="language-css">property: </code>: the name of the property that you want to change.
+                </li>
+                <li>
+                    <code class="language-css">value</code>: controls how much of the property you want to change.
+                </li>
+            </ul>
+            <p>Example of a CSS Rule:</p>
+            <pre class="language-css"><code class="language-css">
+    p {
+
+        font-size: 20px;
+
+    }
+                        </code></pre>
+            <p>The paragraph element is selected and the font size of it is increased to 20px.</p>
         </section>
     </main>
     <footer>
         <!-- Has a footer that contains your name and student ID ✅-->
         <p class="footer-text">Michael Lei - A01058974</p>
         <p class="footer-text">COMP 1171</p>
+        <p>
+        </p>
     </footer>
     <script src="prism.js"></script>
 </body>

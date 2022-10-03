@@ -3,68 +3,100 @@ body {
 	width: 1000px;
 	margin: 0;
 }
-.header-logo-area {
+
+.header-area {
 	display: flex;
-	justify-content: center;
-	gap: 20px;
+	padding-left: 30px;
 	align-items: center;
+	width: 85%;
 }
-img {
-	width: 150px;
-	height: auto;
+
+header {
+	background-color: #272822;
+	display: flex;
 }
 nav {
 	background-color: #272822;
+	border-left: solid 5px white;
+	width: 15%;
 }
 .nav-menu {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding-left: 0;
 	margin: 0 auto;
-	padding: 10px 0;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	gap: 20px;
 	list-style-type: none;
 }
 .nav-menu-item {
-	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50%;
 }
+
+.nav-menu-item:first-child:hover {
+	background-color: #23395b;
+}
+.nav-menu-item:nth-child(2):hover {
+	background-color: #d81e5b;
+}
+
 .nav-menu-link {
+	width: 100%;
 	color: white;
 	font-weight: 500;
 	font-family: "Montserrat", sans-serif;
 	font-size: 30px;
 	text-decoration: none;
 }
-.nav-menu-link:hover {
-	padding-bottom: 10px;
-	border-bottom: solid 2px white;
-}
 
 h1 {
-	font-size: 50px;
-	color: #23395b;
+	font-size: 55px;
+	color: white;
 	font-family: "Montserrat", sans-serif;
 }
+.section-html > ul > li,
+.section-css > ul > li {
+	padding-bottom: 2rem;
+}
+
+li,
 p {
 	color: white;
 	font-family: "Montserrat", sans-serif;
+	line-height: 1.5;
 }
 
 h2 {
 	margin: 0 auto;
 	font-size: 72px;
-	font-family: "Permanent Marker", cursive;
+	font-family: "Gloria Hallelujah", cursive;
 	color: white;
 }
 h3 {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Gloria Hallelujah", cursive;
+	font-size: 30px;
+	font-weight: 500;
 	color: white;
 }
+.section-html > h3,
+.section-css > h3 {
+	margin-top: 10px;
+}
 section {
-	padding: 20px 50px;
+	padding: 20px 50px 100px;
 }
 .section-html {
 	background-color: #23395b;
+}
+.section-html-img {
+	display: block;
+	margin: 50px auto;
 }
 .section-css {
 	background-color: #d81e5b;
