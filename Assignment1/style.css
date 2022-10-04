@@ -13,7 +13,7 @@ body {
 }
 
 header {
-	background-color: #272822;
+	background-color: #faf97e;
 	display: flex;
 }
 nav {
@@ -58,7 +58,7 @@ nav {
 
 h1 {
 	font-size: 55px;
-	color: white;
+	color: black;
 	font-family: "Montserrat", sans-serif;
 }
 .section-html > ul > li,
