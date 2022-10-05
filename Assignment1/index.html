@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Links to a stylesheet containing your CSS styles ✅ -->
     <link rel="stylesheet" href="styles/style.css">
 
     <!-- Prism.js provides syntax highlighting in <code> tag -->
@@ -18,14 +17,12 @@
         href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@400;500;700&family=Permanent+Marker&display=swap"
         rel="stylesheet">
 
-    <!-- Has a title that conveys the main topic ✅-->
     <title>HTML & CSS Basics</title>
 </head>
 
 <body>
     <header>
         <div class="header-area">
-            <!-- Has an h1 with text that also conveys the main topic, using a display font and text color of your choosing ✅-->
             <h1>The Basics of HTML & CSS</h1>
         </div>
         <nav>
@@ -39,19 +36,19 @@
             </ul>
         </nav>
     </header>
-    <!-- Has a minimum of two subheadings (h2) that break the content up into two logical sections, using a non-display font
-    and
-    text color (different from the h1) of your choosing ✅-->
     <main>
         <section class="section-html">
             <h2 id="html">HTML</h2>
             <h3>Function of HTML in a webpage</h3>
-            <p class="section-html-text">HTML (HyperText Markup Language) provides structure to the webpage.</p>
+            <p class="section-html-text">HTML (HyperText Markup Language) is the language that structures webpages.</p>
             <h3>How HTML is written</h3>
             <p>A webpage is made up of many different HTML elements.</p>
-            <img class="section-html-img"
-                src="https://developer.mozilla.org/en-US/docs/Glossary/HTML/anatomy-of-an-html-element.png"
-                alt="Anatomy of an html element">
+            <figure>
+                <img class="section-html-img"
+                    src="https://developer.mozilla.org/en-US/docs/Glossary/HTML/anatomy-of-an-html-element.png"
+                    alt="Detailed view of an HTML element">
+                <figcaption>Image Credits: MDN (Mozilla Developer Network)</figcaption>
+            </figure>
             <ul>
                 <li>The <strong>Opening tag</strong> consists of the element's name and attributes surrounded by
                     angle brackets.</li>
@@ -85,7 +82,6 @@
                     <code class="language-html">&lt;body&gt;</code>: wraps the content that is displayed on the webpage.
                 </li>
             </ul>
-            </p>
             <p>Example of an HTML document:</p>
             <pre class="language-html">
                 <code class="language-html">
@@ -101,15 +97,13 @@
 
     &lt;/body&gt; 
     &lt;/html&gt;
-            </code>
+                </code>
         </pre>
         </section>
         <section class="section-css">
             <h2 id="css">CSS</h2>
             <h3>Function of CSS in a webpage</h3>
-            <p class="section-css-text">CSS (Cascading Style Sheets) is used to style a webpage. It also controls how
-                elements should be
-                displayed on the webpage.</p>
+            <p class="section-css-text">CSS (Cascading Style Sheets) is the language that styles webpages.
             <h3>How CSS is written</h3>
             <p>In CSS, you define rules for selectors and associate them with properties to style them.</p>
             <p>Here's how the CSS syntax looks like:</p>
@@ -148,7 +142,6 @@
         </section>
     </main>
     <footer>
-        <!-- Has a footer that contains your name and student ID ✅-->
         <p class="footer-text">Michael Lei - A01058974</p>
         <p class="footer-text">COMP 1171</p>
         <p>

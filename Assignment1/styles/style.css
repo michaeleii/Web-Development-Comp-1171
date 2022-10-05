@@ -1,9 +1,9 @@
 html {
 	height: 100%;
+	background-color: #b9e3dd;
 }
 
 body {
-	/* Has a maximum page width of 1000px (i.e. the content should never be wider than 1000px) ✅*/
 	display: block;
 	width: 1000px;
 	margin: 0 auto;
@@ -18,12 +18,11 @@ body {
 }
 
 header {
-	background-color: #faf97e;
+	background-color: #fffd98;
 	display: flex;
 }
 nav {
 	background-color: #272822;
-	border-left: solid 5px white;
 	width: 15%;
 }
 .nav-menu {
@@ -100,9 +99,18 @@ section {
 .section-html {
 	background-color: #23395b;
 }
+figure {
+	margin: 50px auto;
+}
 .section-html-img {
 	display: block;
-	margin: 50px auto;
+	margin: 10px auto;
+}
+figcaption {
+	text-align: center;
+	font-size: 12px;
+	font-family: "Montserrat", sans-serif;
+	color: white;
 }
 .section-css {
 	background-color: #d81e5b;
